@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'Pages/home_page.dart';
-import 'Pages/inital_page.dart';
+import 'Pages/initial_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,9 +22,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      initialRoute: isLoggedIn ? '/' : '/inital' ,
+      initialRoute: isLoggedIn ? '/' : '/initial' ,
       routes: {
-        '/': (context) => InitalPage(),
+        '/': (context) => InitialPage(),
         '/home' :(context) => HomePage(),
       },
     );
